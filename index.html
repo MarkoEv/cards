@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios</title>
+  <style>
+    /* Estilo general del contenedor */
+    .user-box {
+      background-color: #ffffff; /* Fondo blanco */
+      border: 1px solid #611232; /* Borde ligero */
+      color: #333; /* Texto oscuro */
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      font-family: Arial, sans-serif;
+      transition: all 0.3s ease; /* Transición suave */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none; /* Eliminar subrayado del enlace */
+      position: relative;
+    }
+
+    /* Cambio de color al pasar el cursor */
+    .user-box:hover {
+      background-color: #611232; /* Color deseado al hacer hover */
+      color: #ffffff; /* Texto blanco en hover */
+      border-color: #611232; /* Borde del mismo color */
+    }
+
+    /* Estilo del título */
+    .user-box h3 {
+      margin: 0;
+      font-size: 1.5em;
+      text-align: left;
+      width: 100%;
+    }
+
+    /* Estilo del subtítulo */
+    .user-box p {
+      margin: 5px 0 15px;
+      font-size: 1em;
+      text-align: left;
+      width: 100%;
+    }
+
+    /* Contenedor para el ícono y el enlace */
+    .user-box-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Estilo del ícono */
+    .user-box-icon {
+      width: 40px;
+      height: 40px;
+      color: #333; /* Color del ícono */
+      fill: currentColor; /* Para que el SVG use el color actual */
+    }
+
+    /* Cambio de color del ícono al hacer hover */
+    .user-box:hover .user-box-icon {
+      color: #ffffff; /* Ícono blanco en hover */
+    }
+
+    /* Estilo del enlace */
+    .user-box a {
+      color: #333; /* Color del texto del enlace */
+      text-decoration: none; /* Sin subrayado */
+      font-size: 0.9em;
+      margin-left: 0;
+    }
+
+    /* Cambio de color del enlace al hacer hover */
+    .user-box:hover a {
+      color: #ffffff; /* Texto blanco en hover */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="user-box">
+    <h3>250</h3>
+    <p>Usuarios</p>
+    <div class="user-box-content">
+      <a href="#">=></a>
+      <svg 
+        class="user-box-icon"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg" 
+        aria-hidden="true"
+      >
+        <!-- Ícono de usuario -->
+         <a href="">
+             <path
+             d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+             ></path>
+            </a>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>
